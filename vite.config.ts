@@ -20,11 +20,7 @@ export default defineConfig({
     cssCodeSplit: true,
     rollupOptions: {
       // 请确保外部化那些你的库中不需要的依赖
-<<<<<<< HEAD
-      external: ['vue', 'element-plus'],
-=======
       external: ['vue', 'elementPlus'],
->>>>>>> master
       output: {
         // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
         globals: {
@@ -34,13 +30,8 @@ export default defineConfig({
     },
     lib: {
       entry: 'packages/index.ts',
-<<<<<<< HEAD
-      name: 'vue3-ellipsis-with-ElTooltip',
-      fileName: (format) => `vue3-ellipsis-with-ElTooltip.${format}.js`
-=======
       name: 'vue3-ellipsis-with-eltooltip',
       fileName: (format) => `vue3-ellipsis-with-eltooltip.${format}.js`
->>>>>>> master
     }
   }
 })
