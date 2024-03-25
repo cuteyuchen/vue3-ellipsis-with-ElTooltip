@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
+=======
+    "declaration": true,
+>>>>>>> master
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -20,6 +24,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+<<<<<<< HEAD
   "include": ["packages/**/*.ts", "packages/**/*.d.ts", "packages/**/*.tsx", "packages/**/*.vue"],
+=======
+  "include": ["packages/**/*.ts", "packages/**/*.d.ts", "packages/**/*.tsx", "packages/**/*.vue","./*.d.ts"],
+>>>>>>> master
 //  "references": [{ "path": "./tsconfig.node.json" }]
 }
