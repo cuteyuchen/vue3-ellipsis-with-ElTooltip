@@ -1,15 +1,10 @@
 {
   "name": "vue3-ellipsis-with-eltooltip",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-<<<<<<< HEAD
-  "main": "dist/vue3-ellipsis-with-ElTooltip.js",
-  "module": "dist/vue3-ellipsis-with-ElTooltip.es.js",
-=======
   "main": "dist/vue3-ellipsis-with-eltooltip.js",
   "module": "dist/vue3-ellipsis-with-eltooltip.es.js",
->>>>>>> master
   "files": [
     "package.json",
     "LICENSE",
@@ -25,6 +20,7 @@
   "dependencies": {
     "element-plus": "^2.6.2",
     "terser": "^5.29.2",
+    "vite-plugin-dts": "^3.7.3",
     "vue": "^3.4.21"
   },
   "devDependencies": {
@@ -33,6 +29,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-css-modules": "^0.0.1",
+    "vite-plugin-libcss": "^1.1.1",
     "vue-tsc": "^2.0.6"
   }
 }

@@ -55,14 +55,13 @@ export default defineComponent({
 <style scoped>
 .x-text-toolTip {
   width: 100%;
-
-  .x-text-content {
-    width: 100%;
-    overflow: hidden;
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break: break-all;
-  }
+}
+.x-text-toolTip .x-text-content {
+  width: 100%;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
 }
 </style>
