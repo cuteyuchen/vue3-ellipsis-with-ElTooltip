@@ -1,7 +1,7 @@
 {
   "name": "vue3-ellipsis-with-eltooltip",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "main": "dist/vue3-ellipsis-with-eltooltip.js",
   "module": "dist/vue3-ellipsis-with-eltooltip.es.js",
@@ -21,7 +21,8 @@
     "element-plus": "^2.6.2",
     "terser": "^5.29.2",
     "vite-plugin-dts": "^3.7.3",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue3-ellipsis-with-eltooltip": "^0.0.3"
   },
   "devDependencies": {
     "@rollup/pluginutils": "^5.1.0",

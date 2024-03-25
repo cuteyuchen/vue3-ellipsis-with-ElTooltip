@@ -11,7 +11,9 @@ export default defineConfig({
   plugins: [
     vue(),
     libCss(),
-    dts(),
+    dts({
+      include: ["packages/**/*.{vue,ts}"],
+    }),
   ],
   resolve: {
     alias: {
