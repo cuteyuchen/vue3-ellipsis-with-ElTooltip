@@ -1,0 +1,33 @@
+{
+  "name": "vue3-ellipsis-with-eltooltip",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/vue3-ellipsis-with-ElTooltip.js",
+  "module": "dist/vue3-ellipsis-with-ElTooltip.es.js",
+  "files": [
+    "package.json",
+    "LICENSE",
+    "package",
+    "example",
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.6.2",
+    "terser": "^5.29.2",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@rollup/pluginutils": "^5.1.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-css-modules": "^0.0.1",
+    "vue-tsc": "^2.0.6"
+  }
+}
