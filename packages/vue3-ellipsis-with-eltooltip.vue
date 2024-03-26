@@ -1,6 +1,6 @@
 <script lang="ts" name="vue3EllipsisWithElTooltip">
 import {ref, onMounted, nextTick, defineComponent, h} from 'vue'
-import {toolTipProps, XTextToolTipSlots} from './type'
+import {toolTipProps} from './type'
 import {ElTooltip} from "element-plus"
 /**
  * @slot content - 插槽的描述
