@@ -10,10 +10,6 @@
   ```
   
 ## 组件配置
-- `text`：文本内容
-```json
-    type: String,
-    required: true
-  ```
 
 - `toolTipProps`: [ElTooltip 的属性](https://element-plus.org/zh-CN/component/tooltip.html#attributes)
+- `插槽`：[ElTooltip 的插槽](https://element-plus.org/zh-CN/component/tooltip.html#slots)

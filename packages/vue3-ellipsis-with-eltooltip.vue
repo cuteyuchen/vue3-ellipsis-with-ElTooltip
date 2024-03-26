@@ -1,23 +1,20 @@
 <script lang="ts" name="vue3EllipsisWithElTooltip">
-import { ref, onMounted, nextTick, defineComponent, h } from 'vue'
-import { toolTipProps } from './type'
-import { ElTooltip } from "element-plus"
-
+import {ref, onMounted, nextTick, defineComponent, h} from 'vue'
+import {toolTipProps, XTextToolTipSlots} from './type'
+import {ElTooltip} from "element-plus"
+/**
+ * @slot content - 插槽的描述
+ */
 export default defineComponent({
   name: 'XTextToolTip',
   props: {
-    text: {
-      type: String,
-      default: '',
-      required: true
-    },
     toolTipProps: {
       type: Object as () => toolTipProps,
       default: () => {
       }
     }
   },
-  setup(props) {
+  setup(props, {slots}) {
     const XTextToolTipRef = ref<HTMLElement>()
     const showToolTip = ref(false)
     const XTextContentRef = ref(null)
@@ -38,14 +35,13 @@ export default defineComponent({
       })
     })
 
-    return () => h('div', { ref: XTextToolTipRef, class: 'x-text-toolTip' }, [
-      h(ElTooltip, {
-        ...props.toolTipProps,
-        disabled: !showToolTip.value,
-        content: props.text
-      }, [
-        h('div', { ref: XTextContentRef, class: 'x-text-content' }, props.text)
-      ])
+    return () => h('div', {ref: XTextToolTipRef, class: 'x-text-toolTip'}, [
+      h(ElTooltip, {...props.toolTipProps, disabled: !showToolTip.value},
+          {
+            default: () => h('div', {ref: XTextContentRef, class: 'x-text-content'}, {default: slots.default}),
+            content: slots.content ?? slots.default
+          }
+      )
     ])
   }
 })
@@ -56,6 +52,7 @@ export default defineComponent({
 .x-text-toolTip {
   width: 100%;
 }
+
 .x-text-toolTip .x-text-content {
   width: 100%;
   overflow: hidden;
